@@ -1,191 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="./output.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <title>WAFA Skincare</title>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
-</head>
-<body class="bg-white text-gray-800">
-
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50" data-aos="fade-down">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="flex items-center space-x-4">
-        <img src="gambar/logo.png" alt="Logo" class="w-[160px] object-contain" />
-      </div>
-      <div class="space-x-6 hidden md:flex">
-        <a href="#home" class="font-medium hover:text-green-500">Home</a>
-        <a href="#about" class="font-medium hover:text-green-500">About</a>
-        <a href="#product" class="font-medium hover:text-green-500">Product</a>
-        <a href="#contact" class="font-medium hover:text-green-500">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <div class="h-[72px]"></div>
-
-  <!-- Hero Section -->
-  <section id="home"
-    class="relative w-full h-screen bg-cover bg-center bg-no-repeat flex flex-col md:flex-row items-center justify-between text-white"
-    style="background-image: url('gambar/1.png');">
-    <div class="absolute inset-0"></div>
-    <div class="relative z-10 md:w-1/2 px-6 md:px-16 py-8 text-left space-y-4" data-aos="fade-up">
-      <p class="text-white font-semibold">WAFA SKINCARE</p>
-      <h1 class="text-white text-4xl md:text-5xl font-bold leading-snug">
-        Buy Our Products Before They Run Out By WAFA SKINCARE
-      </h1>
-      <p class="text-white text-base md:text-lg">
-        <strong>Acnaway</strong> adalah solusi skincare terbaik untuk kulit berjerawat.
-        Diformulasikan dengan bahan aktif alami seperti <em>tea tree oil</em>, <em>niacinamide</em>, dan <em>centella asiatica</em>.
-      </p>
-      <a href="#product" class="inline-block px-6 py-2 bg-green-600 text-white font-medium rounded hover:bg-green-700 transition">
-        Lihat Produk
-      </a>
-    </div>
-    <div class="relative z-10 md:w-1/2 hidden md:block"></div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="w-full flex flex-col md:flex-row" data-aos="fade-up">
-    <div class="w-full md:w-1/2 bg-green-400 flex items-center justify-center py-12">
-      <h1 class="text-white text-5xl font-extralight tracking-[0.2em] uppercase">
-        Acnaway
-      </h1>
-    </div>
-    <div class="w-full md:w-1/2 bg-white flex items-center justify-center px-6 py-12">
-      <div class="max-w-md space-y-4">
-        <h2 class="text-3xl font-bold text-gray-800">Tentang Acnaway</h2>
-        <p class="text-gray-600 leading-relaxed text-justify">
-          <strong>Acnaway</strong> adalah solusi perawatan kulit untuk masalah jerawat dari akar permasalahan.
-        </p>
-        <p class="text-gray-600 leading-relaxed text-justify">
-          Mengandung <em>tea tree oil</em>, <em>niacinamide</em>, dan <em>centella asiatica</em> yang meredakan peradangan dan mempercepat regenerasi kulit.
-        </p>
-        <p class="text-gray-600 leading-relaxed text-justify">
-          Cruelty-free, aman untuk semua jenis kulit, termasuk kulit sensitif.
-        </p>
-        <p class="text-gray-600 leading-relaxed text-justify">
-          Jadikan Acnaway bagian dari rutinitas harianmu!
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Product Section -->
-  <section id="product" class="py-16 px-4 bg-green-100">
-    <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-8 text-green-800">WAFA's Best Seller</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        <!-- Product Cards (unchanged) -->
-        <!-- Card 1 -->
-        <div class="bg-white rounded-xl shadow-md p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100">
-          <img src="gambar/2.png" alt="Facewash" class="w-100 h-50 mx-auto mb-4 object-contain" />
-          <h3 class="font-semibold text-lg mb-2">Facewash</h3>
-          <p class="text-sm text-gray-600 pb-3">Membersihkan dan melawan jerawat dengan lembut.</p>
-          <a href="https://id.shp.ee/QHZpNrZ" class="inline-block mt-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">Beli Sekarang</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <title>WAFA Skincare</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50" data-aos="fade-down">
+      <div class="max-w-5xl mx-auto px-6 py-3 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <img src="gambar/logo.png" alt="Logo" class="w-[160px] object-contain" />
         </div>
-        <!-- Card 2 -->
-        <div class="bg-white rounded-xl shadow-md p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
-          <img src="gambar/3.png" alt="Sunscreen" class="w-100 h-50 mx-auto mb-4 object-contain" />
-          <h3 class="font-semibold text-lg mb-2">Sunscreen</h3>
-          <p class="text-sm text-gray-600 pb-8">Lindungi dari UV tanpa menyumbat pori.</p>
-          <a href="https://id.shp.ee/Ffh5Wxh" class="inline-block mt-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">Beli Sekarang</a>
-        </div>
-        <!-- Card 3 -->
-        <div class="bg-white rounded-xl shadow-md p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="300">
-          <img src="gambar/4.png" alt="Moisturizer" class="w-100 h-50 mx-auto mb-4 object-contain" />
-          <h3 class="font-semibold text-lg mb-2">Moisturizer</h3>
-          <p class="text-sm text-gray-600 pb-8">Melembapkan tanpa rasa berat dan menjaga keseimbangan.</p>
-          <a href="https://id.shp.ee/VCLeAnu" class="inline-block mt-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">Beli Sekarang</a>
-        </div>
-        <!-- Card 4 -->
-        <div class="bg-white rounded-xl shadow-md p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="400">
-          <img src="gambar/5.png" alt="Bundling" class="w-100 h-50 mx-auto mb-4 object-contain" />
-          <h3 class="font-semibold text-lg mb-2">Bundling</h3>
-          <p class="text-sm text-gray-600 pb-7">Paket lengkap untuk perawatan maksimal kulit berjerawat.</p>
-          <a href="http://shopee.co.id/wahyuhidayatullah212" class="inline-block mt-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">Beli Sekarang</a>
+        <div class="space-x-6 hidden md:flex">
+          <a href="#home" class="font-medium hover:text-green-500">Home</a>
+          <a href="#about" class="font-medium hover:text-green-500">About</a>
+          <a href="#product" class="font-medium hover:text-green-500">Product</a>
+          <a href="#blog" class="font-medium hover:text-green-500">Blog</a>
+          <a href="#contact" class="font-medium hover:text-green-500">Contact</a>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Contact Section -->
-  <section id="contact" class="bg-green-100 py-16 px-6" data-aos="fade-up">
-    <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:flex">
-      <!-- Informasi Kontak -->
-      <div class="md:w-1/2 bg-green-400 text-white p-10 flex flex-col justify-between">
-        <div>
-          <h2 class="text-2xl font-bold mb-4">Informasi Kontak</h2>
-          <p class="mb-6">Ada pertanyaan? Hubungi kami langsung!</p>
-          <div class="space-y-4 text-sm">
-            <div class="flex items-center space-x-3"><i class="fas fa-phone"></i><span>+62 812 3456 7890</span></div>
-            <div class="flex items-center space-x-3"><i class="fas fa-envelope"></i><span>wafaskincare@gmail.com</span></div>
-            <div class="flex items-start space-x-3"><i class="fas fa-map-marker-alt"></i><span>Perumahan Telang Puri JL. Telang Kec. Kamal Kab. Bangkalan</span></div>
+    <div class="h-[72px]"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative w-full h-screen bg-cover bg-center bg-no-repeat flex flex-col md:flex-row items-center justify-between text-white" style="background-image: url('gambar/1.png')">
+      <div class="absolute inset-0"></div>
+      <div class="relative z-10 md:w-1/2 px-6 md:px-16 py-8 text-left space-y-4" data-aos="fade-up">
+        <p class="text-white font-semibold">WAFA SKINCARE</p>
+        <h1 class="text-white text-4xl md:text-5xl font-bold leading-snug">Buy Our Products Before They Run Out By WAFA SKINCARE</h1>
+        <p class="text-white text-base md:text-lg">
+          <strong>Acnaway</strong> adalah solusi skincare terbaik untuk kulit berjerawat. Diformulasikan dengan bahan aktif alami seperti <em>tea tree oil</em>, <em>niacinamide</em>, dan <em>centella asiatica</em>.
+        </p>
+        <a href="#product" class="inline-block px-6 py-2 bg-green-600 text-white font-medium rounded hover:bg-green-700 transition"> Lihat Produk </a>
+      </div>
+      <div class="relative z-10 md:w-1/2 hidden md:block"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="w-full flex flex-col md:flex-row" data-aos="fade-up">
+      <div class="w-full md:w-1/2 bg-green-400 flex items-center justify-center py-12">
+        <h1 class="text-white text-5xl font-extralight tracking-[0.2em] uppercase">Acnaway</h1>
+      </div>
+      <div class="w-full md:w-1/2 bg-white flex items-center justify-center px-6 py-12">
+        <div class="max-w-md space-y-4">
+          <h2 class="text-3xl font-bold text-gray-800">Tentang Acnaway</h2>
+          <p class="text-gray-600 leading-relaxed text-justify"><strong>Acnaway</strong> adalah solusi perawatan kulit untuk masalah jerawat dari akar permasalahan.</p>
+          <p class="text-gray-600 leading-relaxed text-justify">Mengandung <em>tea tree oil</em>, <em>niacinamide</em>, dan <em>centella asiatica</em> yang meredakan peradangan dan mempercepat regenerasi kulit.</p>
+          <p class="text-gray-600 leading-relaxed text-justify">Cruelty-free, aman untuk semua jenis kulit, termasuk kulit sensitif.</p>
+          <p class="text-gray-600 leading-relaxed text-justify">Jadikan Acnaway bagian dari rutinitas harianmu!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product" class="py-16 px-4 bg-green-100">
+      <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-8 text-green-800">WAFA's Best Seller</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Product Cards -->
+          <div class="bg-white rounded-xl shadow-md p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100">
+            <img src="gambar/2.png" alt="Facewash" class="w-100 h-50 mx-auto mb-4 object-contain" />
+            <h3 class="font-semibold text-lg mb-2">Facewash</h3>
+            <p class="text-sm text-gray-600 pb-3">Membersihkan dan melawan jerawat dengan lembut.</p>
+            <a href="https://id.shp.ee/QHZpNrZ" class="inline-block mt-10 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">Beli Sekarang</a>
+          </div>
+          <div class="bg-white rounded-xl shadow-md p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
+            <img src="gambar/3.png" alt="Sunscreen" class="w-100 h-50 mx-auto mb-4 object-contain" />
+            <h3 class="font-semibold text-lg mb-2">Sunscreen</h3>
+            <p class="text-sm text-gray-600 pb-8">Lindungi dari UV tanpa menyumbat pori.</p>
+            <a href="https://id.shp.ee/Ffh5Wxh" class="inline-block mt-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">Beli Sekarang</a>
+          </div>
+          <div class="bg-white rounded-xl shadow-md p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="300">
+            <img src="gambar/4.png" alt="Moisturizer" class="w-100 h-50 mx-auto mb-4 object-contain" />
+            <h3 class="font-semibold text-lg mb-2">Moisturizer</h3>
+            <p class="text-sm text-gray-600 pb-8">Melembapkan tanpa rasa berat dan menjaga keseimbangan.</p>
+            <a href="https://id.shp.ee/VCLeAnu" class="inline-block mt-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">Beli Sekarang</a>
+          </div>
+          <div class="bg-white rounded-xl shadow-md p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="400">
+            <img src="gambar/5.png" alt="Bundling" class="w-100 h-50 mx-auto mb-4 object-contain" />
+            <h3 class="font-semibold text-lg mb-2">Bundling</h3>
+            <p class="text-sm text-gray-600 pb-7">Paket lengkap untuk perawatan maksimal kulit berjerawat.</p>
+            <a href="http://shopee.co.id/wahyuhidayatullah212" class="inline-block mt-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">Beli Sekarang</a>
           </div>
         </div>
-        <div class="flex space-x-4 mt-10">
-          <a href="http://shopee.co.id/wahyuhidayatullah212" class="text-white hover:text-orange-400"><i class="fas fa-shopping-bag text-3xl"></i></a>
-          <a href="https://www.instagram.com/wafa_skincare" class="text-white hover:text-pink-700"><i class="fab fa-instagram text-3xl"></i></a>
-          <a href="https://wa.me/qr/CYMC5VQ7P3RTI1" class="text-white hover:text-green-700"><i class="fab fa-whatsapp text-3xl"></i></a>
-        </div>
       </div>
+    </section>
 
-      <!-- Form Kontak -->
-      <div class="md:w-1/2 p-10">
-        <h2 class="text-2xl font-bold text-green-400 mb-6">Hubungi Kami</h2>
-        <form class="space-y-6">
-          <div class="flex gap-4">
-            <input type="text" placeholder="Nama Depan" class="w-1/2 border-b-2 focus:outline-none py-2" />
-            <input type="text" placeholder="Nama Belakang" class="w-1/2 border-b-2 focus:outline-none py-2" />
-          </div>
-          <div class="flex gap-4">
-            <input type="email" placeholder="Email" class="w-1/2 border-b-2 focus:outline-none py-2" />
-            <input type="tel" placeholder="+62 8xxx xxxx xxx" class="w-1/2 border-b-2 focus:outline-none py-2" />
-          </div>
-          <div>
-            <label class="block text-gray-700 mb-2">Pilih Subjek:</label>
-            <div class="flex flex-wrap gap-4 text-sm">
-              <label><input type="radio" name="subject" class="mr-2" checked /> Pertanyaan Umum</label>
-              <label><input type="radio" name="subject" class="mr-2" /> Pemesanan</label>
-              <label><input type="radio" name="subject" class="mr-2" /> Komplain</label>
+    <!-- Bagian Artikel Diperbarui -->
+    <section id="blog" class="bg-white py-16 px-6">
+      <div class="max-w-6xl mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-center text-green-800 mb-10">Artikel Kesehatan Kulit</h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-6">
+          <!-- Artikel 1 -->
+          <div class="bg-green-100 rounded-xl shadow-md overflow-hidden">
+            <img src="gambar/3.jpg" alt="Artikel 1" class="w-full h-40 object-cover" />
+            <div class="px-4 py-4 pb-5">
+              <h3 class="text-xl font-semibold text-green-700 mb-2 mt-4">Cara Merawat Kulit Berjerawat</h3>
+              <p class="text-sm text-gray-700 mb-3">Pahami penyebab jerawat dan bagaimana mengatasinya dengan rutinitas yang tepat...</p>
+              <a href="https://www.alodokter.com/kamu-pasti-belum-tahu-perawatan-wajah-berjerawat-yang-ini" class="text-green-600 hover:underline text-sm mt-3">Baca selengkapnya</a>
             </div>
           </div>
-          <div><textarea placeholder="Tulis pesan Anda..." rows="4" class="w-full border-b-2 focus:outline-none py-2"></textarea></div>
-          <button type="submit" class="bg-green-400 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition">Kirim Pesan</button>
-        </form>
+          <!-- Artikel 2 -->
+          <div class="bg-green-100 rounded-xl shadow-md overflow-hidden">
+            <img src="gambar/4.jpg" alt="Artikel 2" class="w-full h-40 object-cover" />
+            <div class="px-4 py-4 pb-5">
+              <h3 class="text-xl font-semibold text-green-700 mb-2 mt-4">Manfaat Niacinamide</h3>
+              <p class="text-sm text-gray-700 mb-3">Niacinamide efektif untuk mencerahkan, melembapkan, dan menyamarkan bekas...</p>
+              <a href="https://www.siloamhospitals.com/informasi-siloam/artikel/apa-itu-niacinamide" class="text-green-600 hover:underline text-sm">Baca selengkapnya</a>
+            </div>
+          </div>
+          <!-- Artikel 3 -->
+          <div class="bg-green-100 rounded-xl shadow-md overflow-hidden">
+            <img src="gambar/5.jpg" alt="Artikel 3" class="w-full h-40 object-cover" />
+            <div class="px-4 py-4 pb-5">
+              <h3 class="text-xl font-semibold text-green-700 mb-2 mt-4">Kenapa Sunscreen Itu Wajib?</h3>
+              <p class="text-sm text-gray-700 mb-3">Paparan sinar UV bisa memperparah kondisi kulit. Sunscreen adalah pelindung utama...</p>
+              <a href="https://www.halodoc.com/artikel/wajib-dipakai-5-manfaat-sunscreen-bagi-kesehatan-kulit?srsltid=AfmBOoobk61J-FfkNAmP81rTwmGxyFeaSRl5YroEoRXZ57JN9qV-uL_j" class="text-green-600 hover:underline text-sm"
+                >Baca selengkapnya</a
+              >
+            </div>
+          </div>
+          <!-- Artikel 4 -->
+          <div class="bg-green-100 rounded-xl shadow-md overflow-hidden">
+            <img src="gambar/6.jpg" alt="Artikel 4" class="w-full h-40 object-cover" />
+            <div class="px-4 py-4 pb-5">
+              <h3 class="text-xl font-semibold text-green-700 mb-2 mt-4">Pentingnya Double Cleansing</h3>
+              <p class="text-sm text-gray-700 mb-3">Double cleansing membantu membersihkan sisa makeup dan kotoran secara optimal...</p>
+              <a href="https://www.halodoc.com/artikel/pentingnya-double-cleansing-untuk-kesehatan-wajah?srsltid=AfmBOoqcywpDt7DQow6kFuaH51tsIwLyhfLd8mV_Fd3gaNZZVAKg2d4f" class="text-green-600 hover:underline text-sm">Baca selengkapnya</a>
+            </div>
+          </div>
+          <!-- Artikel 5 -->
+          <div class="bg-green-100 rounded-xl shadow-md overflow-hidden">
+            <img src="gambar/7.jpg" alt="Artikel 5" class="w-full h-40 object-cover" />
+            <div class="px-4 py-4 pb-5">
+              <h3 class="text-xl font-semibold text-green-700 mb-2 mt-4">Fungsi Toner dalam Skincare</h3>
+              <p class="text-sm text-gray-700 mb-3">Toner membantu menyeimbangkan pH kulit dan mempersiapkan kulit untuk...</p>
+              <a href="https://www.alodokter.com/fungsi-dan-cara-menggunakan-toner-wajah" class="text-green-600 hover:underline text-sm">Baca selengkapnya</a>
+            </div>
+          </div>
+          <!-- Artikel 6 -->
+          <div class="bg-green-100 rounded-xl shadow-md overflow-hidden">
+            <img src="gambar/8.jpg" alt="Artikel 6" class="w-full h-40 object-cover" />
+            <div class="px-4 py-4 pb-5">
+              <h3 class="text-xl font-semibold text-green-700 mb-2 mt-4">Mengatasi Kulit Kering</h3>
+              <p class="text-sm text-gray-700 mb-3">Kulit kering dapat diatasi dengan bahan alami seperti aloe vera dan minyak jojoba...</p>
+              <a href="https://www.siloamhospitals.com/informasi-siloam/artikel/cara-mengatasi-kulit-kering" class="text-green-600 hover:underline text-sm">Baca selengkapnya</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-green-400 text-white py-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p>&copy; 2025 WAFA Skincare. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="bg-green-100 py-16 px-6" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:flex">
+        <!-- Informasi Kontak -->
+        <div class="md:w-1/2 bg-green-400 text-white p-10 flex flex-col justify-between">
+          <div>
+            <h2 class="text-2xl font-bold mb-4">Informasi Kontak</h2>
+            <p class="mb-6">Ada pertanyaan? Hubungi kami langsung!</p>
+            <div class="space-y-4 text-sm">
+              <div class="flex items-center space-x-3"><i class="fas fa-phone"></i><span>+62 812 3456 7890</span></div>
+              <div class="flex items-center space-x-3"><i class="fas fa-envelope"></i><span>wafaskincare@gmail.com</span></div>
+              <div class="flex items-start space-x-3"><i class="fas fa-map-marker-alt"></i><span>Perumahan Telang Puri JL. Telang Kec. Kamal Kab. Bangkalan</span></div>
+            </div>
+          </div>
+          <div class="flex space-x-4 mt-10">
+            <a href="http://shopee.co.id/wahyuhidayatullah212" class="text-white hover:text-orange-400"><i class="fas fa-shopping-bag text-3xl"></i></a>
+            <a href="https://www.instagram.com/wafa_skincare" class="text-white hover:text-pink-700"><i class="fab fa-instagram text-3xl"></i></a>
+            <a href="https://wa.me/qr/CYMC5VQ7P3RTI1" class="text-white hover:text-green-700"><i class="fab fa-whatsapp text-3xl"></i></a>
+          </div>
+        </div>
 
-  <!-- AOS Script -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  </script>
+        <!-- Form Kontak -->
+        <div class="md:w-1/2 p-10">
+          <h2 class="text-2xl font-bold text-green-400 mb-6">Hubungi Kami</h2>
+          <form class="space-y-6">
+            <div class="flex gap-4">
+              <input type="text" placeholder="Nama Depan" class="w-1/2 border-b-2 focus:outline-none py-2" />
+              <input type="text" placeholder="Nama Belakang" class="w-1/2 border-b-2 focus:outline-none py-2" />
+            </div>
+            <div class="flex gap-4">
+              <input type="email" placeholder="Email" class="w-1/2 border-b-2 focus:outline-none py-2" />
+              <input type="tel" placeholder="+62 8xxx xxxx xxx" class="w-1/2 border-b-2 focus:outline-none py-2" />
+            </div>
+            <div>
+              <label class="block text-gray-700 mb-2">Pilih Subjek:</label>
+              <div class="flex flex-wrap gap-4 text-sm">
+                <label><input type="radio" name="subject" class="mr-2" checked /> Pertanyaan Umum</label>
+                <label><input type="radio" name="subject" class="mr-2" /> Pemesanan</label>
+                <label><input type="radio" name="subject" class="mr-2" /> Komplain</label>
+              </div>
+            </div>
+            <div><textarea placeholder="Tulis pesan Anda..." rows="4" class="w-full border-b-2 focus:outline-none py-2"></textarea></div>
+            <button type="submit" class="bg-green-400 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- Footer -->
+    <footer class="bg-green-400 text-white py-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p>&copy; 2025 WAFA Skincare. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    <style>
+      .like-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 9999px;
+        padding: 6px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: background-color 0.2s;
+        z-index: 10;
+      }
+
+      .like-btn:hover {
+        background-color: #f0f0f0;
+      }
+
+      .like-btn.liked {
+        color: red;
+      }
+
+      .article-image-wrapper {
+        position: relative;
+        display: inline-block;
+      }
+    </style>
+
+    <script>
+      document.querySelectorAll("#blog .bg-green-100").forEach((card) => {
+        const img = card.querySelector("img");
+
+        // Buat wrapper untuk gambar
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("article-image-wrapper");
+        img.parentNode.insertBefore(wrapper, img);
+        wrapper.appendChild(img);
+
+        // Buat tombol suka
+        const likeBtn = document.createElement("div");
+        likeBtn.innerHTML = '<i class="fas fa-heart"></i>';
+        likeBtn.classList.add("like-btn");
+
+        // Toggle like
+        const toggleLike = () => {
+          likeBtn.classList.toggle("liked");
+        };
+
+        likeBtn.addEventListener("click", (e) => {
+          e.stopPropagation(); // Hindari double toggle dari klik di gambar
+          toggleLike();
+        });
+
+        wrapper.addEventListener("click", () => {
+          toggleLike();
+        });
+
+        wrapper.appendChild(likeBtn);
+      });
+    </script>
+  </body>
 </html>
